@@ -31,11 +31,11 @@ addSR <- function(lf, sr, leg = TRUE, hide = TRUE) {
     "CRUSWR", bright_blue, 1,
     "CRUWIN", bright_blue, 1,
     "CRUWYL", bright_blue, 1,
-    "WIN", sr_pal(4)[2], 0.75,
-    "WYL", sr_pal(4)[2], 0.75,
-    "SWR", sr_pal(4)[3], 0.5,
-    "YRL", neutral_gray, 0.25,
-    "SSF", neutral_gray, 0.25
+    "WIN", sr_pal(4)[2], 0.8,
+    "WYL", sr_pal(4)[2], 0.8,
+    "SWR", sr_pal(4)[3], 0.7,
+    "YRL", neutral_gray, 0.5,
+    "SSF", neutral_gray, 0.5
   )
 
   sr_legend <- sr_palette_tbl  |>
