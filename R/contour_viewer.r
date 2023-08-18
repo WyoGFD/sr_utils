@@ -29,11 +29,7 @@
 #'   full.names = TRUE
 #' )
 #'
-#' sr <- wgfd_agol_data("Antelope_Seasonal_Range") |>
-#'   dplyr::filter(RANGE != "OUT") |>
-#'   dplyr::mutate(
-#'     color = viridis::viridis(length(unique(RANGE)))[as.factor(RANGE)]
-#'   )
+#' sr <- wgfd_agol_data("Antelope_Seasonal_Range")
 #'
 #' hu <- wgfd_agol_data("AntelopeHerdUnits")
 #'
