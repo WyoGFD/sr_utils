@@ -118,6 +118,10 @@ with \code{cv_map_ui}
 }}
 \examples{
 \dontrun{
+
+devtools::install_github("https://github.com/WyoGFD/sr.utils")
+library(sr.utils)
+
 raster_paths <- list.files(
   "M:/datacrunch/Newkirk/Sublette Pronghorn/output",
   pattern = "_avg_(core|full).tif",

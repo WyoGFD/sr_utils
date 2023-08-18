@@ -1,3 +1,5 @@
+.data <- rlang::.data
+
 #' @title Utilities
 #'
 #' @description Basic functions for working with UD rasters

@@ -19,6 +19,10 @@
 #'
 #' @examples
 #' \dontrun{
+#'
+#' devtools::install_github("https://github.com/WyoGFD/sr.utils")
+#' library(sr.utils)
+#'
 #' raster_paths <- list.files(
 #'   "M:/datacrunch/Newkirk/Sublette Pronghorn/output",
 #'   pattern = "_avg_(core|full).tif",
@@ -238,19 +242,7 @@ cv_map_server <- function(
         if (!is.null(sr)) {
           og <- c(og, "Existing Seasonal Range")
           lf <- lf |>
-            leaflet::addPolygons(
-              data = sr,
-              group = "Existing Seasonal Range",
-              label = ~ RANGE,
-              color = ~ color,
-              fill = ~ color,
-              opacity = 0.3
-            ) |>
-            leaflet::addLegend(
-              colors = unique(sr$color),
-              labels = unique(sr$RANGE),
-              group = "Existing Seasonal Range"
-            )
+            addSR(sr, hide = FALSE)
         }
 
         if (!is.null(hu)) {
