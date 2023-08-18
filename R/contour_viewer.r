@@ -184,7 +184,7 @@ cv_map_server <- function(
             sprintf(
               "%s_%02d.geojson",
               tools::file_path_sans_ext(basename(r)),
-              c * 100
+              as.integer(c * 100)
             )
           )
           if (file.exists(filepath)) {
